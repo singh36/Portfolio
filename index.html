@@ -2,106 +2,212 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anshoo Singh | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anshoo Singh | Backend Software Engineer</title>
   <style>
     body {
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f9fc;
+      padding: 0;
+      background-color: #f4f4f4;
       color: #333;
     }
+
     header {
-      background: #1f2937;
+      background-color: #1f2937;
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    header p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
     nav a {
-      color: white;
-      margin: 0 15px;
+      color: #f3f4f6;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
     }
+
     section {
-      padding: 40px 20px;
-      max-width: 800px;
+      max-width: 900px;
       margin: auto;
+      padding: 2rem 1rem;
+      background-color: white;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
+
     h2 {
+      border-bottom: 2px solid #1f2937;
+      padding-bottom: 5px;
       color: #1f2937;
     }
-    .project {
-      border: 1px solid #ddd;
-      padding: 15px;
-      margin-bottom: 15px;
-      border-radius: 8px;
-      background: white;
+
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
     }
+
+    .highlight {
+      font-weight: bold;
+    }
+
     footer {
-      background: #1f2937;
-      color: white;
       text-align: center;
       padding: 1rem;
+      background-color: #1f2937;
+      color: white;
+      margin-top: 2rem;
     }
+
+    .info {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .project, .experience-item {
+      margin-bottom: 1.2rem;
+      padding: 1rem;
+      background-color: #f9fafb;
+      border-left: 4px solid #1f2937;
+      border-radius: 5px;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       nav a {
         display: block;
-        margin: 10px 0;
+        margin: 8px 0;
       }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Anshoo Singh</h1>
-    <p>Backend Developer | Java | Spring Boot | DSA Enthusiast</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>Anshoo Singh</h1>
+  <p>Backend Software Engineer | Java | Spring Boot | AWS | Microservices | Generative AI</p>
+  <p>Noida, India | +91-9936474284 | <a href="mailto:anshoosingh36@gmail.com" style="color:#93c5fd;">anshoosingh36@gmail.com</a></p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a software engineer with 4+ years of experience in Java and Spring Boot. Passionate about building scalable backend systems and continuously improving my DSA skills. Currently preparing for a switch to a product-based company.</p>
-  </section>
+<section id="about">
+  <h2>Professional Summary</h2>
+  <p>Backend Software Engineer with 4+ years of experience in designing and deploying scalable, enterprise-grade web applications using Java, Spring Boot, and Microservices. Proficient in REST/SOAP APIs, SQL, AWS, Jenkins, and Docker. Strong background in Low-Level Design (LLD), Agile practices, and production support. Certified in Generative AI, Prompt Engineering, and recognized as an Infosys Certified AI Builder and Spring Boot Developer. Received a 'Commendable' rating for exceptional client contributions.</p>
+</section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java, Spring Boot, REST APIs</li>
-      <li>SQL, Hibernate, JPA</li>
-      <li>Microservices, Git, CI/CD</li>
-      <li>Problem Solving, DSA, LLD</li>
-    </ul>
-  </section>
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <ul>
+    <li><strong>Languages & Frameworks:</strong> Java 8+, Spring Boot, Hibernate, JPA, Django REST Framework</li>
+    <li><strong>APIs & Architecture:</strong> REST APIs, SOAP Web Services, Microservices Architecture</li>
+    <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
+    <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3), Docker, Jenkins, Tomcat, JBoss</li>
+    <li><strong>Tools & Platforms:</strong> Git, SVN, Postman, IntelliJ, STS, VS Code, GitHub Copilot</li>
+    <li><strong>AI & Automation:</strong> ChatGPT, Gemini, Prompt Engineering, GitHub Copilot</li>
+    <li><strong>Frontend (Basic):</strong> HTML, CSS, JavaScript, Bootstrap</li>
+    <li><strong>Core Skills:</strong> Low-Level Design, DSA, Agile, Sprint Planning</li>
+  </ul>
+</section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Telecom Billing System (Infosys)</h3>
-      <p>Built SOAP and REST-based services to handle billing for telecom clients. Worked on backend integrations and data validations using Spring Boot.</p>
-    </div>
-    <div class="project">
-      <h3>Portfolio Website</h3>
-      <p>This personal portfolio site, hosted on GitHub Pages, is a showcase of my skills and projects. (You’re on it!)</p>
-    </div>
-  </section>
+<section id="experience">
+  <h2>Professional Experience</h2>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:anshoosingh36@gmail.com">anshoosingh36@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/anshoosingh36" target="_blank">/in/anshoosingh36</a></p>
-    <p>GitHub: <a href="https://github.com/anshoosingh36" target="_blank">/anshoosingh36</a></p>
-  </section>
+  <div class="experience-item">
+    <strong>Software Engineer – Infosys, Noida</strong> (Sep 2023 – Present)<br/>
+    <strong>Client: Colt Technology</strong> (Oct 2023 – Jun 2025)<br/>
+    - Built LLDs, developed and deployed backend modules using Spring Boot and SQL<br/>
+    - Worked on Jenkins CI/CD and collaborated across teams<br/><br/>
+    <strong>Client: Orange Technology</strong> (Jul 2025 – Present)<br/>
+    - Led microservice development with Spring Boot and Docker<br/>
+    - Implemented CI/CD pipelines, ensured scalability and performance<br/>
+    - <strong>Achievement:</strong> Received “Commendable” rating
+  </div>
 
-  <footer>
-    <p>© 2025 Anshoo Singh</p>
-  </footer>
+  <div class="experience-item">
+    <strong>Software Engineer – Backend – Amoga Software, Bangalore</strong> (Jun 2022 – Sep 2023)<br/>
+    - Built scalable microservices using Spring Boot and PostgreSQL<br/>
+    - Created REST APIs in Django; maintained Cube.js modules<br/>
+    - Refactored legacy code and resolved live production issues
+  </div>
+
+  <div class="experience-item">
+    <strong>Software Engineer – Cognizant, Bangalore</strong> (Sep 2021 – Jun 2022)<br/>
+    - Backend development with Spring Boot, AWS, Agile teams<br/>
+    - Sprint planning, automation, and deployment support
+  </div>
+
+  <div class="experience-item">
+    <strong>Software Engineer Intern – Cognizant</strong> (Jan 2021 – Jul 2021)<br/>
+    - Built microservices with Spring Boot and Angular<br/>
+    - Delivered end-to-end module integration with JSP & REST
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>B.Tech (CSE)</strong> – Lovely Professional University (2017–2021) – 76.7%</li>
+    <li><strong>12th</strong> – S.B. Inter College, Prayagraj (2015–2016) – 83.3%</li>
+    <li><strong>10th</strong> – National Inter College, Prayagraj (2013–2014) – 79.8%</li>
+  </ul>
+</section>
+
+<section id="certifications">
+  <h2>Certifications</h2>
+  <ul>
+    <li>Infosys Certified AI Builder</li>
+    <li>Infosys Certified Spring Boot Developer</li>
+    <li>Generative AI Fundamentals – Infosys</li>
+    <li>Prompt Engineering – Infosys</li>
+    <li>Java (Basic) – HackerRank</li>
+    <li>Problem Solving (Basic) – HackerRank</li>
+    <li>Programming in Java – NPTEL</li>
+    <li>Design and Algorithms – NPTEL</li>
+    <li>5★ HackerRank (Problem Solving) | 2★ CodeChef</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:anshoosingh36@gmail.com">anshoosingh36@gmail.com</a></p>
+  <p>Phone: +91-9936474284</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/anshoosingh36" target="_blank">linkedin.com/in/anshoosingh36</a></p>
+  <p>Portfolio: <a href="https://singh36.github.io/Portfolio/" target="_blank">singh36.github.io/Portfolio</a></p>
+</section>
+
+<footer>
+  <p>© 2025 Anshoo Singh • Built with HTML & CSS • Hosted on GitHub Pages</p>
+</footer>
 
 </body>
 </html>
