@@ -2,154 +2,167 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anshoo Singh | Backend Engineer</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anshoo Singh - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-    body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; background-color: #f9f9f9; color: #333; }
-    header { background: #0d47a1; color: white; padding: 20px 0; text-align: center; }
-    nav { display: flex; justify-content: center; gap: 20px; padding: 10px 0; background: #1976d2; }
-    nav a { color: white; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-
-    section { padding: 40px 20px; max-width: 1100px; margin: auto; }
-    h2 { margin-bottom: 20px; color: #0d47a1; border-left: 5px solid #1976d2; padding-left: 10px; }
-
-    .hero { text-align: center; padding: 60px 20px; background: linear-gradient(to right, #2196f3, #64b5f6); color: white; }
-    .hero h1 { font-size: 2.5em; }
-    .hero p { margin: 20px 0; font-size: 1.2em; }
-    .btn { background: #fff; color: #1976d2; padding: 10px 20px; border: none; border-radius: 5px; font-weight: bold; cursor: pointer; }
-    .btn:hover { background: #e3f2fd; }
-
-    .skills .skill { margin-bottom: 15px; }
-    .skill-name { margin-bottom: 5px; }
-    .progress { background: #e0e0e0; height: 12px; border-radius: 6px; overflow: hidden; }
-    .progress-bar { height: 100%; background: #1976d2; }
-
-    .card { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-
-    .contact-form input, .contact-form textarea { width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px; }
-    .contact-form button { background: #1976d2; color: white; padding: 10px 20px; border: none; border-radius: 5px; }
-
-    footer { background: #0d47a1; color: white; text-align: center; padding: 20px; }
-    .social-icons a { color: white; margin: 0 10px; font-size: 1.2em; }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2em; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background-color: #f5f7fa;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #0a192f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #112240;
+      gap: 30px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #0a192f;
+      border-bottom: 2px solid #64ffda;
+      padding-bottom: 10px;
+    }
+    .btn {
+      background-color: #64ffda;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      color: #0a192f;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    footer {
+      text-align: center;
+      background-color: #0a192f;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
+
 <body>
+  <header>
+    <h1>Anshoo Singh</h1>
+    <p>Backend Software Engineer | Java | Spring Boot | AWS | Generative AI</p>
+    <p>Noida, India | <a style="color:#64ffda;" href="mailto:anshoosingh36@gmail.com">anshoosingh36@gmail.com</a> | +91-9936474284</p>
+    <a href="Anshoo_Singh_Resume.docx" download><button class="btn">Download Resume</button></a>
+  </header>
 
-<header>
-  <h1>Anshoo Singh</h1>
-  <p>Backend Software Engineer | Java | Spring Boot | AWS | Microservices | Generative AI</p>
-</header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+  </nav>
 
-<nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#experience">Experience</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#contact">Contact</a>
-</nav>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Backend Software Engineer with 4+ years of experience in scalable enterprise-grade applications using Java, Spring Boot, and Microservices. Hands-on with REST/SOAP APIs, AWS, and Docker. Certified AI Builder and Generative AI enthusiast.
+    </p>
+  </section>
 
-<section class="hero">
-  <h1>Hi, I'm Anshoo 👋</h1>
-  <p>Engineer with 4+ years of experience building scalable backend solutions.</p>
-  <a href="Anshoo_Singh_Resume.docx" download><button class="btn">Download Resume</button></a>
-</section>
-
-<section id="about">
-  <h2>About Me</h2>
-  <p>Backend Software Engineer with 4+ years of experience in designing and deploying enterprise-grade web applications using Java, Spring Boot, and Microservices. Recognized for strong low-level design, AWS knowledge, and Generative AI integration.</p>
-</section>
-
-<section id="skills" class="skills">
-  <h2>Technical Skills</h2>
-
-  <div class="skill">
-    <div class="skill-name">Java & Spring Boot</div>
-    <div class="progress"><div class="progress-bar" style="width: 95%;"></div></div>
-  </div>
-
-  <div class="skill">
-    <div class="skill-name">AWS & DevOps</div>
-    <div class="progress"><div class="progress-bar" style="width: 85%;"></div></div>
-  </div>
-
-  <div class="skill">
-    <div class="skill-name">SQL & Databases</div>
-    <div class="progress"><div class="progress-bar" style="width: 90%;"></div></div>
-  </div>
-
-  <div class="skill">
-    <div class="skill-name">Generative AI</div>
-    <div class="progress"><div class="progress-bar" style="width: 75%;"></div></div>
-  </div>
-
-</section>
-
-<section id="experience">
-  <h2>Experience</h2>
-  <div class="card">
-    <h3>Software Engineer – Infosys, Noida</h3>
-    <p><strong>Sep 2023 – Present</strong></p>
+  <section id="skills">
+    <h2>Technical Skills</h2>
     <ul>
-      <li>Built backend modules with Java, Spring Boot, and Jenkins</li>
-      <li>Handled microservices development and CI/CD pipeline setup</li>
+      <li><strong>Languages & Frameworks:</strong> Java 8+, Spring Boot, Hibernate, Django REST</li>
+      <li><strong>API & Architecture:</strong> REST, SOAP, Microservices</li>
+      <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
+      <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3), Docker, Jenkins</li>
+      <li><strong>Tools:</strong> Git, Postman, IntelliJ, VS Code, Copilot</li>
+      <li><strong>AI:</strong> ChatGPT, Gemini, Prompt Engineering</li>
+      <li><strong>Frontend:</strong> HTML, CSS, JS, Bootstrap</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="card">
-    <h3>Backend Engineer – Amoga Software</h3>
-    <p><strong>Jun 2022 – Sep 2023</strong></p>
+  <section id="projects">
+    <h2>Project Showcase</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Telecom Order Management</h3>
+        <p>Developed backend APIs for order and provisioning workflows for telecom clients using Java Spring Boot and SQL.</p>
+      </div>
+      <div class="card">
+        <h3>Inbox & Notes Microservices</h3>
+        <p>Built REST APIs for inbox/notes in Django, integrated with PostgreSQL, optimized backend logic for scale.</p>
+      </div>
+      <div class="card">
+        <h3>Healthcare Data APIs</h3>
+        <p>Worked on Spring Boot microservices for CVS Health Care, integrated AWS services for backend scaling.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Professional Experience</h2>
     <ul>
-      <li>Developed scalable microservices and REST APIs</li>
-      <li>Maintained analytics features using CUBE.js</li>
+      <li><strong>Infosys</strong> – Backend Engineer (Sep 2023 – Present)</li>
+      <li><strong>Amoga Software</strong> – Backend Engineer (Jun 2022 – Sep 2023)</li>
+      <li><strong>Cognizant</strong> – Backend Engineer (Sep 2021 – Jun 2022)</li>
+      <li><strong>Cognizant Intern</strong> – (Jan 2021 – Jul 2021)</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="card">
-    <h3>Software Engineer – Cognizant</h3>
-    <p><strong>Sep 2021 – Jun 2022</strong></p>
+  <section id="education">
+    <h2>Education</h2>
     <ul>
-      <li>Worked on CVS Health project with AWS + Spring Boot</li>
-      <li>Participated in sprint planning and production support</li>
+      <li><strong>B.Tech</strong> – LPU, Jalandhar (2017 – 2021) | 76.7%</li>
+      <li><strong>12th</strong> – S.B. Inter College, Prayagraj | 83.3%</li>
+      <li><strong>10th</strong> – National Inter College, Prayagraj | 79.8%</li>
     </ul>
-  </div>
-</section>
+  </section>
 
-<section id="certifications">
-  <h2>Certifications</h2>
-  <ul>
-    <li>Infosys Certified AI Builder</li>
-    <li>Generative AI Fundamentals – Infosys</li>
-    <li>Java & Problem Solving – HackerRank</li>
-    <li>Prompt Engineering – Infosys</li>
-    <li>Design and Algorithms – NPTEL</li>
-  </ul>
-</section>
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Infosys Certified AI Builder</li>
+      <li>Spring Boot Developer – Infosys</li>
+      <li>Generative AI & Prompt Engineering – Infosys</li>
+      <li>Java, Problem Solving – HackerRank</li>
+      <li>NPTEL Java, Design and Algorithms</li>
+    </ul>
+  </section>
 
-<section id="contact">
-  <h2>Contact Me</h2>
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required />
-    <input type="email" placeholder="Your Email" required />
-    <textarea rows="4" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-<footer>
-  <p>Made with ❤️ by Anshoo Singh</p>
-  <div class="social-icons">
-    <a href="https://www.linkedin.com/in/anshoosingh36" target="_blank"><i class="fab fa-linkedin"></i></a>
-    <a href="mailto:anshoosingh36@gmail.com"><i class="fas fa-envelope"></i></a>
-    <a href="https://github.com/singh36" target="_blank"><i class="fab fa-github"></i></a>
-  </div>
-</footer>
-
+  <footer>
+    <p>© 2025 Anshoo Singh. All rights reserved.</p>
+  </footer>
 </body>
 </html>
