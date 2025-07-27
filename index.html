@@ -7,48 +7,70 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
     * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
       font-family: 'Inter', sans-serif;
-      box-sizing: border-box;
     }
 
     body {
-      background-color: #f4f4f4;
+      background-color: #f9fafb;
       color: #1f2937;
-      padding: 40px;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      color: #111827;
-    }
-
-    h2 {
-      margin-top: 30px;
-      font-size: 1.5rem;
-      border-bottom: 2px solid #1f2937;
-      display: inline-block;
-      padding-bottom: 5px;
-    }
-
-    p, li {
-      margin: 10px 0;
       line-height: 1.6;
     }
 
-    a {
-      color: #2563eb;
+    header {
+      background-color: #1f2937;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      margin: 0.25rem 0;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: #93c5fd;
       text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
     }
 
     section {
-      margin-bottom: 30px;
+      background: #fff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      border-left: 4px solid #2563eb;
+      padding-left: 10px;
+      color: #1f2937;
     }
 
     ul {
@@ -56,100 +78,132 @@
       margin-left: 20px;
     }
 
-    .button {
-      padding: 10px 20px;
-      background-color: #1f2937;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 15px;
+    a {
+      color: #2563eb;
     }
 
-    input[type="file"] {
-      margin-top: 10px;
+    .experience-item, .project {
+      margin-bottom: 1.2rem;
+      padding-left: 1rem;
+      border-left: 3px solid #4b5563;
     }
 
     footer {
-      margin-top: 40px;
       text-align: center;
-      font-size: 0.9rem;
-      color: #6b7280;
+      padding: 1.5rem;
+      background-color: #1f2937;
+      color: #e5e7eb;
+    }
+
+    .resume-button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 20px;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .resume-button:hover {
+      background-color: #1e40af;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+
+      header h1 {
+        font-size: 2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Anshoo Singh</h1>
-    <p>Backend Software Engineer | Java | Spring Boot | AWS | Microservices | Generative AI</p>
-    <p>Noida, India | +91-9936474284 | <a href="mailto:anshoosingh36@gmail.com">anshoosingh36@gmail.com</a></p>
-    <p>
-      <a href="https://www.linkedin.com/in/anshoosingh36" target="_blank">LinkedIn</a> |
-      <a href="https://singh36.github.io/Portfolio/" target="_blank">Portfolio</a>
-    </p>
-  </header>
 
-  <section id="summary">
+<header>
+  <h1>Anshoo Singh</h1>
+  <p>Backend Software Engineer | Java | Spring Boot | AWS | Microservices | Generative AI</p>
+  <p>Noida, India | <a href="mailto:anshoosingh36@gmail.com">anshoosingh36@gmail.com</a> | +91-9936474284</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
     <h2>Professional Summary</h2>
     <p>
-      Backend Software Engineer with 4+ years of experience in designing and deploying scalable, enterprise-grade web applications using Java, Spring Boot, and Microservices. Proficient in REST/SOAP APIs, SQL, AWS, Jenkins, and Docker. Strong background in Low-Level Design (LLD), Agile practices, and production support. Certified in Generative AI and Prompt Engineering.
+      Backend Software Engineer with 4+ years of experience designing and deploying scalable web applications using Java, Spring Boot, and Microservices. Proficient in REST/SOAP APIs, SQL, AWS, Jenkins, Docker. Strong in Low-Level Design (LLD), Agile development, and production support. Certified in Generative AI and Prompt Engineering.
     </p>
+    <a class="resume-button" href="Anshoo_Singh_Resume.pdf" download>📥 Download Resume</a>
   </section>
 
   <section id="skills">
     <h2>Technical Skills</h2>
     <ul>
-      <li><strong>Languages & Frameworks:</strong> Java 8+, Spring Boot, Hibernate, JPA, Django REST Framework</li>
-      <li><strong>API & Architecture:</strong> REST APIs, SOAP, Microservices</li>
+      <li><strong>Languages:</strong> Java 8+, Python</li>
+      <li><strong>Frameworks:</strong> Spring Boot, Hibernate, JPA, Django REST</li>
+      <li><strong>APIs:</strong> REST, SOAP, Microservices</li>
       <li><strong>Databases:</strong> PostgreSQL, MySQL</li>
-      <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3), Docker, Jenkins, Tomcat, JBoss</li>
-      <li><strong>Tools:</strong> Git, SVN, Postman, IntelliJ, STS, VS Code</li>
-      <li><strong>AI Tools:</strong> ChatGPT, Gemini, GitHub Copilot</li>
-      <li><strong>Frontend (Basic):</strong> HTML, CSS, JavaScript, Bootstrap</li>
-      <li><strong>Core Skills:</strong> LLD, DSA, Agile, Sprint Planning</li>
+      <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3), Docker, Jenkins, Tomcat</li>
+      <li><strong>Tools:</strong> Git, Postman, IntelliJ, VS Code, Copilot</li>
+      <li><strong>AI & Automation:</strong> ChatGPT, Gemini, Prompt Engineering</li>
+      <li><strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap</li>
     </ul>
   </section>
 
   <section id="experience">
     <h2>Professional Experience</h2>
-    <ul>
-      <li><strong>Infosys, Noida – Software Engineer (Sep 2023 – Present)</strong>
-        <ul>
-          <li>Client: Colt Technology (Oct 2023 – Jun 2025)</li>
-          <li>Developed backend modules using Java, Spring Boot, SQL</li>
-          <li>Worked in UAT and Agile collaboration</li>
-          <li>Client: Orange Technology (Jul 2025 – Present)</li>
-          <li>Led microservices development, Docker, Jenkins CI/CD</li>
-          <li>Received “Commendable” rating</li>
-        </ul>
-      </li>
-      <li><strong>Amoga Software, Bangalore – Backend Engineer (Jun 2022 – Sep 2023)</strong>
-        <ul>
-          <li>Developed Spring Boot microservices and Django REST APIs</li>
-          <li>Maintained analytics via CUBE.JS</li>
-        </ul>
-      </li>
-      <li><strong>Cognizant, Bangalore – Software Engineer (Sep 2021 – Jun 2022)</strong>
-        <ul>
-          <li>Worked on CVS Healthcare using Spring Boot and AWS</li>
-        </ul>
-      </li>
-      <li><strong>Cognizant – Intern (Jan 2021 – Jul 2021)</strong>
-        <ul>
-          <li>Built microservices using Spring Boot and PostgreSQL</li>
-        </ul>
-      </li>
-    </ul>
+
+    <div class="experience-item">
+      <strong>Software Engineer – Infosys, Noida</strong> (Sep 2023 – Present)
+      <ul>
+        <li>Client: Colt Technology (Oct 2023 – Jun 2025)</li>
+        <li>Built backend modules in Spring Boot, SQL, integrated CI/CD via Jenkins</li>
+        <li>Client: Orange Tech (Jul 2025 – Present)</li>
+        <li>Led development using Dockerized microservices</li>
+        <li><strong>Achievement:</strong> Commendable rating</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <strong>Backend Engineer – Amoga Software, Bangalore</strong> (Jun 2022 – Sep 2023)
+      <ul>
+        <li>Developed Spring Boot microservices, Django REST APIs</li>
+        <li>Managed analytics pipelines via Cube.js</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <strong>Software Engineer – Cognizant</strong> (Sep 2021 – Jun 2022)
+      <ul>
+        <li>Worked on CVS Healthcare systems using Spring Boot & AWS</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <strong>Intern – Cognizant</strong> (Jan 2021 – Jul 2021)
+      <ul>
+        <li>Built microservices using Java, Spring Boot, Angular</li>
+      </ul>
+    </div>
   </section>
 
   <section id="education">
     <h2>Education</h2>
     <ul>
-      <li><strong>B.Tech – Lovely Professional University</strong> (2017 – 2021) – 76.7%</li>
-      <li><strong>12th – S.B. Inter College, Prayagraj</strong> – 83.3%</li>
-      <li><strong>10th – National Inter College, Prayagraj</strong> – 79.8%</li>
+      <li><strong>B.Tech (CSE)</strong> – Lovely Professional University (2017–2021) – 76.7%</li>
+      <li><strong>12th</strong> – S.B. Inter College (2015–2016) – 83.3%</li>
+      <li><strong>10th</strong> – National Inter College (2013–2014) – 79.8%</li>
     </ul>
   </section>
 
@@ -157,25 +211,26 @@
     <h2>Certifications</h2>
     <ul>
       <li>Infosys Certified AI Builder</li>
-      <li>Spring Boot Developer – Infosys</li>
-      <li>Generative AI & Prompt Engineering – Infosys</li>
-      <li>Java & Problem Solving – HackerRank</li>
-      <li>NPTEL: Programming in Java, Design and Algorithms</li>
+      <li>Infosys Certified Spring Boot Developer</li>
+      <li>Prompt Engineering & Generative AI</li>
+      <li>HackerRank: Java & Problem Solving</li>
+      <li>NPTEL: Programming in Java, Algorithms</li>
       <li>5★ HackerRank | 2★ CodeChef</li>
     </ul>
   </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="Anshoo_Singh_Resume.pdf" download class="button">📥 Download Resume</a><br><br>
-    <label>Upload Resume (Demo Only):
-      <input type="file" accept=".pdf,.doc,.docx" />
-    </label>
-    <p style="font-size: 0.85rem; color: gray;">(Upload feature works only in backend-supported hosting)</p>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:anshoosingh36@gmail.com">anshoosingh36@gmail.com</a></p>
+    <p>Phone: +91-9936474284</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/anshoosingh36" target="_blank">linkedin.com/in/anshoosingh36</a></p>
+    <p>Portfolio: <a href="https://singh36.github.io/Portfolio/" target="_blank">singh36.github.io/Portfolio</a></p>
   </section>
+</main>
 
-  <footer>
-    <p>© 2025 Anshoo Singh. Portfolio built with ❤️ and HTML/CSS.</p>
-  </footer>
+<footer>
+  <p>© 2025 Anshoo Singh — Built with HTML & CSS • Hosted on GitHub Pages</p>
+</footer>
+
 </body>
 </html>
