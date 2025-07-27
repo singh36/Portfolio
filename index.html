@@ -3,193 +3,150 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anshoo Singh - Backend Software Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <title>Anshoo Singh | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      background-color: #f8f9fa;
-      color: #212529;
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
     }
+    body { background: #f8f9fa; color: #333; }
 
     header {
-      background-color: #0d6efd;
+      background: linear-gradient(90deg, #004e92, #000428);
       color: white;
-      padding: 2rem;
+      padding: 3rem 2rem;
       text-align: center;
     }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { font-size: 1.1rem; }
 
     nav {
+      background: #003366;
       display: flex;
       justify-content: center;
-      background-color: #343a40;
+      padding: 0.5rem;
     }
-
     nav a {
       color: white;
+      margin: 0 1rem;
       text-decoration: none;
-      margin: 1rem;
-      font-weight: 600;
-      cursor: pointer;
+      font-weight: bold;
+      transition: color 0.3s;
     }
+    nav a:hover { color: #ffcc00; }
 
-    nav a:hover {
-      color: #ffc107;
-    }
-
-    .container {
+    section {
+      padding: 3rem 2rem;
       max-width: 960px;
       margin: auto;
-      padding: 2rem;
     }
 
-    .section {
-      display: none;
-      padding-top: 2rem;
+    .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
     }
-
-    .active {
-      display: block;
-    }
-
-    .btn {
-      background-color: #0d6efd;
-      color: white;
-      border: none;
-      padding: 0.7rem 1.5rem;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      margin-top: 1rem;
-      display: inline-block;
-    }
-
     .card {
-      background-color: white;
-      border-radius: 10px;
+      background: white;
       padding: 1.5rem;
-      margin: 1rem 0;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      flex: 1 1 45%;
+      transition: transform 0.3s;
     }
+    .card:hover { transform: scale(1.03); }
 
-    .card h3 {
-      margin-top: 0;
-      color: #0d6efd;
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .contact-form button {
+      background: #004e92;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-download {
+      background: #ffcc00;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      margin-top: 1rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      text-decoration: none;
     }
 
     footer {
+      background: #222;
+      color: #ccc;
       text-align: center;
-      background-color: #343a40;
-      color: white;
       padding: 1rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 600px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-      }
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Anshoo Singh</h1>
-  <p>Backend Software Engineer | Java | Spring Boot | AWS | Microservices | Generative AI</p>
-  <p>Noida, India | +91-9936474284 | <a href="mailto:anshoosingh36@gmail.com" style="color: #ffc107;">anshoosingh36@gmail.com</a></p>
-  <a class="btn" href="Anshoo_Singh_Resume.pdf" download>Download Resume</a>
-</header>
+  <header>
+    <h1>Anshoo Singh</h1>
+    <p>Backend Software Engineer | Java | Spring Boot | AWS | Microservices | Generative AI</p>
+    <a href="Anshoo_Singh_Resume.pdf" class="btn-download" download>Download Resume</a>
+  </header>
 
-<nav>
-  <a onclick="showSection('about')">About</a>
-  <a onclick="showSection('skills')">Skills</a>
-  <a onclick="showSection('projects')">Projects</a>
-  <a onclick="showSection('experience')">Experience</a>
-  <a onclick="showSection('contact')">Contact</a>
-</nav>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-<div class="container">
-  <section id="about" class="section active">
-    <h2>Professional Summary</h2>
-    <p>
-      Backend Software Engineer with 4+ years of experience in designing scalable, enterprise-grade web apps using Java, Spring Boot, and Microservices. Certified in Generative AI & Spring Boot. Strong in REST/SOAP APIs, SQL, AWS, Docker, and Agile practices.
-    </p>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a backend software engineer with 4+ years of experience in building scalable web applications using Java, Spring Boot, and Microservices. Proficient in REST APIs, AWS, SQL, Jenkins, Docker, and Generative AI. I’ve worked with top clients like Orange and Colt Technology. Recognized as Infosys Certified AI Builder and Commendable Contributor.</p>
   </section>
 
-  <section id="skills" class="section">
-    <h2>Technical Skills</h2>
-    <ul>
-      <li><strong>Languages:</strong> Java 8+, Python</li>
-      <li><strong>Frameworks:</strong> Spring Boot, Hibernate, Django REST</li>
-      <li><strong>API & Cloud:</strong> REST/SOAP, AWS EC2/S3, Docker</li>
-      <li><strong>Tools:</strong> Git, Jenkins, Postman, Copilot</li>
-      <li><strong>Frontend:</strong> HTML, CSS, Bootstrap</li>
-      <li><strong>Core:</strong> LLD, DSA, Agile, Generative AI</li>
-    </ul>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>Projects Showcase</h2>
-
-    <div class="card">
-      <h3>Microservices for Telecom Provisioning</h3>
-      <p>Designed backend microservices for provisioning services for clients like Orange and Colt, improving deployment efficiency by 30%.</p>
-    </div>
-
-    <div class="card">
-      <h3>Django-Based Task Manager</h3>
-      <p>Created RESTful API with Django to manage tasks, notes, and attachments with JWT-based auth.</p>
-    </div>
-
-    <div class="card">
-      <h3>Resume Website</h3>
-      <p>Portfolio website using HTML, CSS, GitHub Pages to showcase experience and resume download functionality.</p>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Microservice Backend for Orange</h3>
+        <p>Led development of scalable microservices using Spring Boot and Docker. Implemented CI/CD pipelines with Jenkins. Managed backend systems for high availability.</p>
+      </div>
+      <div class="card">
+        <h3>Analytics Dashboard (CUBE.JS)</h3>
+        <p>Built analytics features with CUBE.JS, integrated with REST APIs, and optimized dashboard rendering. Used PostgreSQL and Django for backend.</p>
+      </div>
+      <div class="card">
+        <h3>CVS Healthcare Backend</h3>
+        <p>Developed backend modules using Spring Boot, AWS, and Agile practices. Automated deployments and collaborated in cross-functional teams.</p>
+      </div>
+      <div class="card">
+        <h3>AI Prompt Generator</h3>
+        <p>Created a web tool using JavaScript and OpenAI API to generate AI prompts. Integrated with GitHub Copilot and Gemini for live suggestions.</p>
+      </div>
     </div>
   </section>
 
-  <section id="experience" class="section">
-    <h2>Professional Experience</h2>
-    <p><strong>Infosys – Backend Engineer</strong> (Sep 2023 – Present)</p>
-    <ul>
-      <li>Client: Colt Tech | Microservices with Spring Boot, SQL, Jenkins</li>
-      <li>Client: Orange | CI/CD with Jenkins, Docker, SQL tuning</li>
-    </ul>
-
-    <p><strong>Amoga Software</strong> (Jun 2022 – Sep 2023)</p>
-    <ul>
-      <li>REST API development with Django</li>
-      <li>Analytics modules in Cube.js, PostgreSQL optimization</li>
-    </ul>
-
-    <p><strong>Cognizant</strong> (Sep 2021 – Jun 2022)</p>
-    <ul>
-      <li>Worked on healthcare projects using Spring Boot & AWS</li>
-    </ul>
-  </section>
-
-  <section id="contact" class="section">
+  <section id="contact">
     <h2>Contact Me</h2>
-    <p><strong>Email:</strong> anshoosingh36@gmail.com</p>
-    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anshoosingh36" target="_blank">linkedin.com/in/anshoosingh36</a></p>
-    <p><strong>Portfolio:</strong> <a href="https://singh36.github.io/Portfolio/" target="_blank">Portfolio Link</a></p>
+    <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
-</div>
 
-<footer>
-  &copy; 2025 Anshoo Singh | All rights reserved
-</footer>
-
-<script>
-  function showSection(id) {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach((section) => section.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-  }
-</script>
+  <footer>
+    <p>&copy; 2025 Anshoo Singh | <a href="mailto:anshoosingh36@gmail.com">anshoosingh36@gmail.com</a></p>
+    <p><a href="https://www.linkedin.com/in/anshoosingh36" target="_blank" style="color: #ffcc00;">LinkedIn</a></p>
+  </footer>
 
 </body>
 </html>
